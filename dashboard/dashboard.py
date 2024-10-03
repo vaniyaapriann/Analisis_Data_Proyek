@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 
 # Load data
-hour_data = pd.read_csv('main_data.csv')
+hour_data = pd.read_csv('dashboard/main_data.csv')
 hour_data['dteday'] = pd.to_datetime(hour_data['dteday'])
 hour_data['date'] = hour_data['dteday'].dt.date
 hour_data['year'] = hour_data['dteday'].dt.year
